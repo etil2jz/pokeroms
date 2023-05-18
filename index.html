@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokéRoms</title>
+  <link rel="icon" type="image/webp" href="./img/favicon.webp">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .downloads {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+      background-color: #df3029;
+    }
+
+    @media screen and (max-width: 600px) {
+      .download-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pokémon Téléchargements</h1>
+
+    <div class="downloads">
+      <a href="chemin/vers/fichier1.pdf" class="download-button">Télécharger Fichier 1</a>
+      <a href="chemin/vers/fichier2.pdf" class="download-button">Télécharger Fichier 2</a>
+      <a href="chemin/vers/fichier3.pdf" class="download-button">Télécharger Fichier 3</a>
+    </div>
+  </div>
+</body>
+</html>
