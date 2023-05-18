@@ -1,68 +1,66 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PokéRoms</title>
-  <link rel="icon" type="image/webp" href="./img/favicon.webp">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokéRoms - Téléchargement de jeux Pokémon</title>
+    <meta name="description" content="Téléchargez facilement tous les jeux Pokémon sans pub. Jouez sur émulateur ou console. La collection Pokémon complète. Téléchargements rapides." />
+    <link rel="icon" type="image/webp" href="./img/favicon.webp" />
+    <meta http-equiv="content-language" content="fr" />
+    <meta name="keywords" content="Télécharger ROM Pokémon, ROM Pokémon GBA, ROM Pokémon DS, ROM Pokémon 3DS, ROM Pokémon Game Boy Color, Émulateur Pokémon, Jeux Pokémon ROM, Pokémon ROM hack, Pokémon ROM fan games, Pokémon ROM français, Pokémon ROM randomizer, Pokémon ROM patch français, Télécharger ROM Pokémon en français, Pokémon ROM traduite, Pokémon ROM sauvegarde, Pokémon ROM compatible émulateur, Pokémon ROM pour Android, Pokémon ROM pour iOS, Pokémon ROM pour PC, Pokémon ROM alternatives, Pokémon ROM rétrocompatibilité, Pokémon ROM triche, Pokémon ROM personnalisée, Pokémon ROM multi-langue, Pokémon ROM jouable en ligne, Pokémon ROM échange de Pokémon, Pokémon ROM élevage de Pokémon, Pokémon ROM stratégie, Pokémon ROM entraînement d'équipe, Pokémon ROM shiny hunting">
+    <style>
+        @font-face {
+            font-family: 'PokemonBW';
+            src: url('./fonts/pokemon-b-w.ttf') format('truetype');
+        }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+        body {
+            font-family: 'PokemonBW', sans-serif;
+            background-image: url('./img/background.webp');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
 
-    h1 {
-      text-align: center;
-    }
+        .container {
+            background-color: rgba(255,255,255, 0.75);
+            border-radius: 20px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            z-index: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-    .downloads {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 30px;
-    }
+        .btn {
+            width: 192px;
+            height: 192px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.25s;
+        }
 
-    .download-button {
-      display: inline-block;
-      background-color: #f44336;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin: 10px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
+        .btn:hover {
+            transform: scale(1.1);
+        }
 
-    .download-button:hover {
-      background-color: #df3029;
-    }
-
-    @media screen and (max-width: 600px) {
-      .download-button {
-        width: 100%;
-      }
-    }
-  </style>
+        .btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Pokémon Téléchargements</h1>
-
-    <div class="downloads">
-      <a href="chemin/vers/fichier1.pdf" class="download-button">Télécharger Fichier 1</a>
-      <a href="chemin/vers/fichier2.pdf" class="download-button">Télécharger Fichier 2</a>
-      <a href="chemin/vers/fichier3.pdf" class="download-button">Télécharger Fichier 3</a>
+    <div class="container">
+        <div class="btn">
+            <img src="./img/cartridge/soulsilver.webp" />
+        </div>
     </div>
-  </div>
 </body>
 </html>
